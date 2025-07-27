@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulkhamid Developer - Portfolio</title>
+    <meta name="description"
+          content="Full Stack Developer Portfolio - Modern web applications with React, Node.js and cutting-edge technologies">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+                <span class="logo-text">
+                    <img style="margin-left: 20px;" width="30" src="img/analytics.png" alt="">
+                </span>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="nav-menu" id="nav-menu">
+            <a href="#about" class="nav-link" data-section="about">
+                <span data-key="nav.about">About</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <span data-key="nav.skills">Skills</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <span data-key="nav.projects">Projects</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <span data-key="nav.contact">Contact</span>
+            </a>
+        </div>
+
+        <!-- Controls -->
+        <div class="nav-controls">
+            <select id="language-selector" class="language-selector">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+                <option value="uz">UZ</option>
+            </select>
+
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-background"></div>
+    <div class="container">
+        <div class="hero-content">
+            <p class="hero-greeting" data-key="hero.greeting">Hi, I'm</p>
+            <h1 class="hero-name">
+                <span class="gradient-text" data-key="">Abdulkhamid Saydullaxoja</span>
+            </h1>
+            <h2 class="hero-title" data-key="">Business Analyst with Python Expertise</h2>
+            <p class="hero-description" data-key="">
+                I’m a 16-year-old self-taught backend developer specializing in Python and web development. I focus on
+                building efficient, scalable systems and solving real-world problems with clean, maintainable code.
+                Always eager to learn and grow, I’m dedicated to delivering high-quality solutions that meet client
+                needs.
+            </p>
+            <button class="cta-button" onclick="scrollToSection('projects')">
+                <span data-key="hero.cta">View Projects</span>
+            </button>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" data-key="about.title">About Me</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p class="about-description" data-key="">
+                    Hi! I'm a passionate and self-taught Full-Stack Python Developer. Although I’ve just completed the
+                    10th grade, I’ve already built several full-stack projects using Python, Django, and modern web
+                    technologies. I enjoy solving real-world problems with code and constantly strive to improve my
+                    skills. I believe age doesn’t define ability — dedication and curiosity do!
+                </p>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number" data-key="">2+ years</div>
+                        <div class="stat-label" data-key="about.experience">Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-key="">10+</div>
+                        <div class="stat-label" data-key="about.projects">Projects</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="developer-emoji">
+                    <img style="width: 300px; border-radius: 10px;" src="img/polo.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" data-key="skills.title">Skills</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3 class="category-title" data-key="">Data Analyst</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Pandas</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL(MS)</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">POWER BI</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">POWER QUERY</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">DAX</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title" data-key="skills.backend">Backend</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Tg-BOT</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 82%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQLITE</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Django</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">RestFullApi</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3 class="category-title" data-key="">Python +</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Docker</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Celery</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">ORM</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Socket, Websocket</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 98%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-item">
+                        <span class="skill-name">Fast API</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 98%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title" data-key="projects.title">Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://i.pinimg.com/1200x/ed/79/5a/ed795a22d5fa5c332c89cc5824c5618d.jpg"
+                         alt="E-commerce Platform">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/abdulkham1d?tab=repositories" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Expense Analysis</h3>
+                    <p class="project-description">Month-by-Month Analysis Conducted and Visualized in Power BI</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">Power Query</span>
+                        <span class="tech-tag">Power BI</span>
+                    </div>
+                    <div class="project-buttons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/parfum.png"
+                         alt="Task Management App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/abdulkham1d?tab=repositories" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Tashkent Parfum App</h3>
+                    <p class="project-description">Created custom APIs for data integration and automation</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">RestApi</span>
+                        <span class="tech-tag">Swagger</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="img/mapss.png"
+                         alt="Weather Dashboard">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/abdulkham1d?tab=repositories" class="project-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Global Trade Dashboard</h3>
+                    <p class="project-description">Real-time Dashboard Showing World Trade Performance</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">SQL(MS)</span>
+                        <span class="tech-tag">Power Query</span>
+                        <span class="tech-tag">Power BI</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-divider"></div>
+            <p class="section-description">Get in touch to discuss your project</p>
+        </div>
+
+        <div class="contact-content">
+            <!-- Raqam chiqadigan joy -->
+            <div id="phoneNumber" class="phone-number">📞 +998 97 750 09 72</div>
+
+            <!-- Iconkalar qatori -->
+            <div class="social-links">
+                <a href="javascript:void(0);" class="social-link" onclick="showPhoneNumber()">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://github.com/abdulkham1d?tab=repositories" class="social-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="" class="social-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FontAwesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Styling -->
+<style>
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .social-link {
+        font-size: 24px;
+        color: white;
+        background-color: #2d2d3a;
+        padding: 15px;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .social-link:hover {
+        background-color: #3b3b4f;
+    }
+
+    .phone-number {
+        display: none;
+        background-color: #1e293b;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-size: 18px;
+        margin-top: 20px;
+        color: white;
+        text-align: center;
+        animation: slideDown 0.5s ease forwards;
+    }
+
+    .phone-number.show {
+        display: inline-block;
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<!-- Script -->
+<script>
+    function showPhoneNumber() {
+        const phone = document.getElementById("phoneNumber");
+        phone.classList.add("show");
+
+        setTimeout(() => {
+            phone.classList.remove("show");
+        }, 4000); // 4 sekunddan keyin yashirinadi
+    }
+</script>
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 Abdulkhamid Developer. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
